@@ -11,10 +11,10 @@
         <span @click="resetPassword" v-text="resetWord"></span>
       </div>
       <Form-item label="新密码" prop="password" v-if="resetPWD">
-        <Input v-model="formValidate.password" @on-change="allowSubmit" placeholder="······" type="password"></Input>
+        <Input v-model="formValidate.password" @on-change="allowSubmit" placeholder="密码为5-20位字符" type="password"></Input>
       </Form-item>
       <Form-item label="确认密码" prop="passwordConfirm" v-if="resetPWD">
-        <Input v-model="formValidate.passwordConfirm" @on-change="allowSubmit" placeholder="······" type="password"></Input>
+        <Input v-model="formValidate.passwordConfirm" @on-change="allowSubmit" placeholder="密码为5-20位字符" type="password"></Input>
       </Form-item>
       <Form-item label="LOGO" prop="logofile">
         <img v-if="formValidate.logofile" style="max-width:100px;border:1px solid #eee" :src="formValidate.logofile"

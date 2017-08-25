@@ -181,6 +181,11 @@ export default {
       this.formTop.publishchannel = Cookies.get('channel');
       if (Cookies.get('keyword') != null && Cookies.get('keyword') != 'null') {
         this.formTop.keywordArr = Cookies.get('keyword').split(/\s+/g);
+        for (let i = 0; i<this.formTop.keywordArr.length;i++){
+          if (this.formTop.keywordArr[i] == '') {
+            this.formTop.keywordArr.splice(i,1)
+          }
+        }
       }
       this.formTop.summary = Cookies.get('summary');
 
