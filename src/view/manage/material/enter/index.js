@@ -171,6 +171,9 @@ export default {
         this.videoId = data.material.id;
         this.hasImg = false;
         this.uploading = true;
+        this.title = data.material.title;
+        this.zhaiyaoContentCount = Math.ceil(this.gblen(this.zhaiyao,100,'zhaiyao'));
+        this.titleContentCount = Math.ceil(this.gblen(this.title,44,'title'));
         
         
 //      var $ = qaVideo.get('$')
