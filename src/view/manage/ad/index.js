@@ -224,8 +224,8 @@ export default {
     },
     onSuccess(response, field, ki) {
       if (response.path) {
-        this.data.forEach((n) => {
-          if (n.id === ki) {
+        this.data.forEach((n,index) => {
+          if (index === ki) {
             n.path = response.path
           }
         })

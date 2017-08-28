@@ -697,6 +697,7 @@ export default {
     },
     save: function (name, hideTip) {
       this.formTop.content = this.editor.getContent();
+      console.log(this.formTop)
       if (!this.formTop.content && this.editor.body.innerHTML.indexOf('<video') > -1) {
         this.formTop.content = this.editor.body.innerHTML;
       }

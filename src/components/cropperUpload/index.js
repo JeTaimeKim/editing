@@ -141,6 +141,7 @@ export default {
             this.$refs.fileinput.click();
           }
         }
+        console.log(this.index)
        }
     },
     handleChange(e) {
